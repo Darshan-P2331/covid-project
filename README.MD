@@ -1,10 +1,8 @@
 # Covid-19 Project
 
-A machine learning model is used to predict whether a Covid-19 patient should be hospitalized or not. Click **[here](https://github.com/dhruva-shashi/covid-project/blob/master/MLModel.sav?raw=true)** to download the machine learning model
+A machine learning model is used to predict whether a Covid-19 patient should be hospitalized or not based on factors such as age, gender, pre-existing comorbidities, etc. Click **[here](https://github.com/dhruva-shashi/covid-project/blob/master/MLModel.sav?raw=true)** to download the machine learning model
 
-
-
-The following factors are used to analyse the severity of a Covid-19 patient's condition
+## Factors used for analysis
 
 - Age
 - Gender
@@ -12,9 +10,7 @@ The following factors are used to analyse the severity of a Covid-19 patient's c
 - Pneumonia
 - Pregnancy
 
-
-
-The pre-existing comorbidities that are used for analysis are
+## Pre-existing comorbidities used for analysis
 
 - Diabetes
 - Chronic obstructive pulmonary disease (COPD)

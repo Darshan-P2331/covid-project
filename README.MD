@@ -4,6 +4,8 @@ A machine learning model is used to predict whether a Covid-19 patient should be
 
 Click **[here](https://github.com/dhruva-shashi/covid-project/blob/master/MLModel.sav?raw=true)** to download the machine learning model.
 
+Click **[here](https://github.com/dhruva-shashi/covid-project/blob/master/MLModel.sav?raw=true)** to view the Kaggle dataset
+
 ## Factors used for analysis
 
 - Age

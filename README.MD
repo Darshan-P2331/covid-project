@@ -40,27 +40,28 @@ MLModel = joblib.load('MLModel.sav')
 
 The record for each patient should consist of the following 
 
-1. Pneumonia (True/False - 0/1)
-2. Age (Non-negative Integer)
-3. Prengancy (True/False - 0/1)
-4. Diabetes (True/False - 0/1)
-5. COPD (True/False - 0/1)
-6. Asthma (True/False - 0/1)
-7. Hypertension (True/False - 0/1)
-8. Other Diseases (True/False - 0/1)
-9. Cardiovascular Diseases (True/False - 0/1)
-10. Obesity (True/False - 0/1)
-11. Kidney Disorders (True/False - 0/1)
-12. Tobacco consumer (True/False - 0/1)
-13. Male (True/False - 0/1)
-14. Female (True/False - 0/1)
-15. Transgender (True/False - 0/1)
+| No | Factor | Type |
+| --- | ------ | ---- |
+| 1 | Pneuomnia | True/False (1/0) |
+| 2 | Age | Non-negative Integer |
+| 3 | Pregnancy | True/False (1/0) |
+| 4 | Diabetes | True/False (1/0) |
+| 5 | COPD | True/False (1/0) |
+| 6 | Asthma | True/False (1/0) |
+| 7 | Hypertension | True/False (1/0) |
+| 8 | Other Diseases | True/False (1/0) |
+| 9 | Cardiovascular Diseases | True/False (1/0) |
+| 10 | Obesity | True/False (1/0) |
+| 11 | Kidney Disorders | True/False (1/0) |
+| 12 | Tobacco consumer | True/False (1/0) |
+| 13 | Male | True/False (1/0) |
+| 14 | Female | True/False (1/0) |
+| 15 | Transgender | True/False (1/0) |
 
 ## Sample Program
 
 ```python
 import joblib
-import numpy
 
 # Load the MLModel
 MLModel = joblib.load('MLModel.sav')
@@ -68,10 +69,10 @@ MLModel = joblib.load('MLModel.sav')
 patient = []
 
 # Patient summary: 25 year-old female, obese
-patient.append(numpy.array([0, 25, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0]))
+patient.append([0, 25, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0])
 
 # Patient summary: 80 year-old male, diabetes, cardiovascular disease
-patient.append(numpy.array([0, 80, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0]))
+patient.append([0, 80, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0])
 
 # Prints an array with two elements
 print(MLModel.predict(patient))

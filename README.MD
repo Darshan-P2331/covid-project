@@ -36,9 +36,7 @@ import joblib
 MLModel = joblib.load('MLModel.sav')
 ```
 
-## Patient record should contain the following
-
-The record for each patient should consist of the following 
+## Patient record should contain the following attributes
 
 | No | Factor | Type |
 | --- | ------ | ---- |
